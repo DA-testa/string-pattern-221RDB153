@@ -1,7 +1,8 @@
 # python3
 
 def read_input():
-    input_choice, pattern, text = input().rstrip().split()
+    input_str = input().rstrip()
+    input_choice, pattern, text = input_str.split()
     if input_choice.upper() == 'F':
         with open(pattern) as f:
             pattern = f.readline().rstrip()
